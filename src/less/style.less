@@ -1,0 +1,193 @@
+@import "./normalize.less"; // 引入框架的常量
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+.cls-page {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #fff;
+  z-index: 1;
+  &.nobackground {
+    background: none;
+  }
+}
+.leftOut-leave-active {
+  z-index: 99;
+  overflow: hidden;
+  animation: leftOut 0.3s ease;
+  animation-fill-mode: both;
+}
+.p-20px {
+  padding: 20px;
+}
+.list-nostyle {
+  li {
+    list-style: none;
+  }
+}
+.text-right {
+  text-align: right;
+}
+.animation {
+  animation-fill-mode: both;
+}
+.pt-20px {
+  padding-top: 20px;
+}
+.p-15px {
+  padding: 15px;
+}
+.p-0 {
+  padding: 0 !important;
+}
+.leftIn-enter-active {
+  z-index: 9999;
+  overflow: hidden;
+  animation: leftIn 0.3s ease;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+.duration-1000ms {
+  animation-duration: 1000ms;
+}
+.delay-500ms {
+  animation-delay: 500ms;
+}
+.delay-1000ms {
+  animation-delay: 1000ms;
+}
+.delay-1500ms {
+  animation-delay: 1500ms;
+}
+.delay-2000ms {
+  animation-delay: 2000ms;
+}
+.fade-enter-active {
+  animation: fadeIn 0.3s ease;
+}
+.fade-leave-active {
+  animation: fadeOut 0.3s ease;
+}
+
+.rightOut-leave-active {
+  z-index: 100;
+  animation: rightOut 0.3s ease;
+  animation-fill-mode: both;
+}
+.rightIn-enter-active {
+  z-index: 99;
+  animation: rightIn 0.3s ease;
+  animation-fill-mode: both;
+}
+@keyframes leftOut {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-70%);
+  }
+}
+@keyframes rightIn {
+  0% {
+    transform: translateX(-70%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes rightOut {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes leftIn {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.buy-this-painting {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #a5a5a5;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.buy-this-painting img {
+  width: 12px !important;
+  height: 12px;
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+.buy_tips {
+  background-color: #fff;
+  font-size: 14px;
+  padding: 20px;
+  color: #000 !important;
+  width: 60%;
+  border-radius: 10px;
+  line-height: 24px;
+}
+.mb-20px {
+  margin-bottom: 20px;
+}
+.buy_tips i {
+  font-size: 24px;
+  font-style: italic;
+  font-family: monospace;
+  line-height: 32px;
+}
+
+.relative {
+  position: relative;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}

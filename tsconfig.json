@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "module": "esnext",
+    "target": "ES5",
+    "experimentalDecorators": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "lib": ["esnext", "DOM"],
+    "alwaysStrict": true,
+    "moduleResolution": "Node",
+    "sourceMap": true,
+    /*  "inlineSourceMap": true,
+    "inlineSources": true, */
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    // 这可以对 `this` 上的数据 property 进行更严格的推断
+    "strict": true,
+    "removeComments": false,
+    "pretty": true,
+    "strictPropertyInitialization": true,
+    "baseUrl": ".",
+    "rootDirs": ["./src/i18n/#{lang}"],
+    "typeRoots": ["./node_modules/@types", "./src/typings"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["**/*.d.ts", "./**/*.ts", "src/index.ts"],
+  "exclude": ["node_modules", "**/*.js"]
+}
